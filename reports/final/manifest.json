@@ -1,0 +1,50 @@
+{
+  "method": "Age \u00d7 label independence reweighting",
+  "fit_split": "train (600)",
+  "threshold": 0.5,
+  "candidate_count": 1,
+  "selection": "Both fixed candidates reported; no test-based tuning",
+  "features": [
+    "checking_account_status",
+    "loan_duration_months",
+    "credit_history",
+    "loan_purpose",
+    "credit_amount",
+    "savings_status",
+    "employment_duration",
+    "installment_rate",
+    "other_debtors",
+    "residence_duration",
+    "property_category",
+    "other_installment_plans",
+    "housing",
+    "existing_credit_count",
+    "job_category",
+    "dependent_count",
+    "telephone",
+    "foreign_worker"
+  ],
+  "data_sha256": "fb506d2fed179045812abd712ccf29165dce53a928947601cfbe967e754d14b4",
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "fairlearn": "0.14.0",
+    "shap": "0.52.0",
+    "streamlit": "1.65.0",
+    "plotly": "7.1.0"
+  },
+  "shap_units": "Raw XGBoost margin (log-odds); one-hot contributions summed per original feature",
+  "limitations": [
+    "Approval is a good-credit-risk proxy, not an observed approval decision.",
+    "Gender codebook mapping is disputed and cannot support real gender-bias claims.",
+    "Excluding protected attributes does not ensure fairness.",
+    "The 0.5 threshold is a demo default; scores are not calibrated probabilities.",
+    "Reweighting does not guarantee demographic parity or equalized odds on unseen data.",
+    "Test has only 200 records. Wilson intervals are approximate group-rate intervals, not gap significance tests.",
+    "SHAP explains model associations, not causal effects or proof of fairness.",
+    "Age groups are arbitrary; separate attribute audits can hide intersectional disparities.",
+    "Baseline Step 2 test reservation is now superseded by this final evaluation."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "prediction_file_sha256": "8cda89d44ed64d49814df4d7592f585c98d620cfef6138836f3bdfbd40d34f27",
+  "fairlearn_version": "0.14.0",
+  "split": "validation",
+  "limitations": [
+    "Approval labels are good-credit-risk proxies, not observed approvals.",
+    "Gender codebook grouping is unverified; no real gender-bias claims are justified.",
+    "Point estimates only: no confidence intervals or significance tests.",
+    "Small denominators can cause large changes in rates; <20 is a descriptive flag only.",
+    "Separate attribute audits can hide intersectional disparities.",
+    "Parity is not proof of fairness; this audit does not establish causation.",
+    "Demographic parity and equalized odds encode different goals and may conflict."
+  ],
+  "metric_reference": "https://fairlearn.org/v0.13/api_reference/generated/fairlearn.metrics.equalized_odds_difference.html"
+}

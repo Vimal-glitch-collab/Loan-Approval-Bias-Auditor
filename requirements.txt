@@ -1,0 +1,17 @@
+# Data handling
+numpy
+pandas
+# Modeling
+scikit-learn
+xgboost
+joblib
+# Fairness and explanations
+fairlearn
+shap
+# Dashboard and plots
+matplotlib
+plotly
+streamlit
+# Notebooks
+jupyter
+ipykernel

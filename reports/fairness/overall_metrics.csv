@@ -1,0 +1,8 @@
+metric,value
+count,200.0
+positive_count,140.0
+negative_count,60.0
+selection_rate,0.825
+accuracy,0.765
+true_positive_rate,0.9214285714285714
+false_positive_rate,0.6

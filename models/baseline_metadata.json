@@ -1,0 +1,72 @@
+{
+  "random_state": 42,
+  "threshold": 0.5,
+  "feature_columns": [
+    "checking_account_status",
+    "loan_duration_months",
+    "credit_history",
+    "loan_purpose",
+    "credit_amount",
+    "savings_status",
+    "employment_duration",
+    "installment_rate",
+    "other_debtors",
+    "residence_duration",
+    "property_category",
+    "other_installment_plans",
+    "housing",
+    "existing_credit_count",
+    "job_category",
+    "dependent_count",
+    "telephone",
+    "foreign_worker"
+  ],
+  "numeric_columns": [
+    "loan_duration_months",
+    "credit_amount",
+    "installment_rate",
+    "residence_duration",
+    "existing_credit_count",
+    "dependent_count"
+  ],
+  "categorical_columns": [
+    "checking_account_status",
+    "credit_history",
+    "loan_purpose",
+    "savings_status",
+    "employment_duration",
+    "other_debtors",
+    "property_category",
+    "other_installment_plans",
+    "housing",
+    "job_category",
+    "telephone",
+    "foreign_worker"
+  ],
+  "protected_attributes": [
+    "gender_codebook_proxy",
+    "age_group"
+  ],
+  "target": "loan_approved",
+  "split_sizes": {
+    "train": 600,
+    "validation": 200,
+    "test": 200
+  },
+  "data_sha256": "fb506d2fed179045812abd712ccf29165dce53a928947601cfbe967e754d14b4",
+  "python_version": "3.13.7",
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "joblib": "1.6.0"
+  },
+  "limitations": [
+    "Approval is a good-credit-risk proxy, not an observed approval decision.",
+    "Gender codebook mapping is disputed and cannot support real gender-bias claims.",
+    "Excluding protected attributes does not ensure fairness.",
+    "The 0.5 threshold is a demo default; scores are not calibrated probabilities.",
+    "Test set is reserved; do not use it for model or mitigation selection."
+  ]
+}

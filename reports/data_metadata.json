@@ -1,0 +1,37 @@
+{
+  "source": "https://archive.ics.uci.edu/static/public/144/statlog+german+credit+data.zip",
+  "target": "loan_approved",
+  "target_meaning": "1=good credit risk; 0=bad credit risk; approval proxy only",
+  "protected_attributes": [
+    "gender_codebook_proxy",
+    "age_group"
+  ],
+  "feature_columns": [
+    "checking_account_status",
+    "loan_duration_months",
+    "credit_history",
+    "loan_purpose",
+    "credit_amount",
+    "savings_status",
+    "employment_duration",
+    "installment_rate",
+    "other_debtors",
+    "residence_duration",
+    "property_category",
+    "other_installment_plans",
+    "housing",
+    "existing_credit_count",
+    "job_category",
+    "dependent_count",
+    "telephone",
+    "foreign_worker"
+  ],
+  "age_groups": "<25; 25 <= age <40; age >=40",
+  "limitations": [
+    "No observed loan approval labels.",
+    "Original sex/status coding is disputed. gender_codebook_proxy is unverified.",
+    "Gender proxy comparisons cannot establish real gender disparities.",
+    "CSV does not preserve pandas categorical dtypes."
+  ],
+  "coding_correction_source": "https://archive.ics.uci.edu/dataset/573/south+german+credit+update"
+}

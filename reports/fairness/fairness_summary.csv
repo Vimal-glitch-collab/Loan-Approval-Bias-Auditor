@@ -1,0 +1,3 @@
+attribute,split,threshold,n,demographic_parity_difference,true_positive_rate_difference,false_positive_rate_difference,equalized_odds_difference
+age_group,validation,0.5,200,0.09905660377358494,0.06666666666666665,0.08653846153846156,0.08653846153846156
+gender_codebook_proxy,validation,0.5,200,0.06944444444444442,0.07006035161374968,0.12323491655969188,0.12323491655969188
