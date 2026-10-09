@@ -124,3 +124,5 @@ Small historical data, label/protected-attribute quality, arbitrary age bins, li
 
 The dataset is distributed under UCI's CC BY 4.0 terms; retain attribution and check the linked source for the applicable dataset license. Code and data should not be represented as an original collected lending dataset.
 
+#   L o a n - A p p r o v a l - B i a s - A u d i t o r  
+ 
